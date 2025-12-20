@@ -37,7 +37,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2 group">
-            <img src='/logo.png' className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform" />
+            <img src='/logo.png' className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform hidden dark:block" />
+            <img src='/logo-light.png' className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform block dark:hidden" />
             <div>
               <span className="font-hirosaki text-2xl font-bold">JunkToCode <span className='text-primary'>.</span></span>
               <span className="block text-xs text-gray-500 dark:text-gray-400 font-medium">Studio</span>
@@ -85,7 +86,7 @@ const Header = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden overflow-hidden"
+              className="md:hidden overflow-hidden backdrop-blur-lg p-4"
             >
               <div className="py-4 border-t border-gray-200 dark:border-gray-800">
                 {navItems.map((item) => (

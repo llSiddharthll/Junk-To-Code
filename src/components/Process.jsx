@@ -398,9 +398,9 @@ const Process = () => {
                         </span>
                     </div>
 
-                    <h2 className="font-hirosaki text-4xl md:text-6xl lg:text-8xl font-bold mb-6">
-                        <span className="text-white">The</span>
-                        <span className="block text-gradient bg-gradient-to-r from-primary via-primary to-primary-dark">
+                    <h2 className="font-hirosaki text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                        <span className="block">The</span>
+                        <span className="text-gradient">
                             Engineering Blueprint
                         </span>
                     </h2>
@@ -414,7 +414,7 @@ const Process = () => {
                 {/* Interactive Process Timeline */}
                 <div className="relative">
                     {/* Main visualization area */}
-                    <div className="relative h-[400px] md:h-[500px] lg:h-[600px] mb-12 md:mb-20">
+                    <div className="relative h-100 md:h-125 lg:h-150 mb-20 mt-32 md:mt-0">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activePhase}
@@ -463,11 +463,6 @@ const Process = () => {
                                         ))}
                                     </div>
 
-                                    {/* Duration */}
-                                    <div className="flex items-center space-x-2 text-gray-400 justify-center lg:justify-start">
-                                        <Clock className="w-4 h-4 md:w-5 md:h-5" />
-                                        <span className="text-sm md:text-base font-medium">{phases[activePhase].duration}</span>
-                                    </div>
                                 </div>
                             </motion.div>
                         </AnimatePresence>
@@ -537,7 +532,7 @@ const Process = () => {
                         </div>
 
                         {/* Phase labels - FIXED ALIGNMENT */}
-                        <div className="flex items-center gap-16 mt-6 md:mt-8 px-1 md:px-24">
+                        <div className="hidden md:flex items-center gap-16 mt-6 md:mt-8 px-1 md:px-24">
                             {phases.map((phase, index) => (
                                 <div
                                     key={phase.id}

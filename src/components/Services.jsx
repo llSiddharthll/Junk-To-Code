@@ -232,11 +232,11 @@ const Services = () => {
                       <service.icon className={`w-8 h-8 ${service.color}`} />
                     </motion.div>
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
+                  {/* <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
                     <span className="text-xs font-bold text-gray-700 dark:text-gray-300">
                       {index + 1}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Content */}
